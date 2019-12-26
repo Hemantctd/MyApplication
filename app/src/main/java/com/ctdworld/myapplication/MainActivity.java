@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             et_state=(CustomEditText) findViewById(R.id.et_state);
             et_Address=(CustomEditText) findViewById(R.id.et_Address);
             et_reg_Under=(CustomEditText) findViewById(R.id.et_reg_Under);
-            et_reg_business_name=(CustomEditText) findViewById(R.id.et_reg_business_name);
+           et_reg_business_name=(CustomEditText) findViewById(R.id.et_reg_business_name);
         et_merchantName=(CustomEditText) findViewById(R.id.et_merchantName);
 
             ivBack =  findViewById(R.id.iv_back);

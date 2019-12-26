@@ -86,7 +86,7 @@
 
 
 
-                    <com.ctdworld.myapplication.customviews.CustomTextView
+                    <com.ctdworld.myapplication.customviews.CustomEditText
                         android:id="@+id/et_reg_business_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
