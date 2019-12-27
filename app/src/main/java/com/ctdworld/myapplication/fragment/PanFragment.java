@@ -16,7 +16,6 @@ import com.ctdworld.myapplication.R;
  */
 public class PanFragment extends Fragment {
 
-
     public PanFragment() {
         // Required empty public constructor
     }
@@ -27,6 +26,8 @@ public class PanFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pan, container, false);
+
+
     }
 
 }

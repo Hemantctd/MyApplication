@@ -2,6 +2,8 @@ package com.ctdworld.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +26,8 @@ public class Main4Activity extends AppCompatActivity {
     FloatingActionButton float1_pan,float2_cancelled_check,float3_gstCertificate,float4_adhaar;
     CustomTextView txt_adhaar,txt_gst_certificate,txt_cancelled_cheque,txt_pan;
     RelativeLayout rel_pan,rel_cancelledCheque,rel_gstCertificate,rel_Adhaar;
-
+    private Object Fragment;
+    Object fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,9 +126,18 @@ public class Main4Activity extends AppCompatActivity {
         txt_adhaar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, AdhaarFragment.class));
+
+                // startActivity(new Intent(Main4Activity.this, AdhaarFragment.class));
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                AdhaarFragment adhaarFragment = new AdhaarFragment();
+                fragmentTransaction.add(R.layout.fragment_adhaar);
+                fragmentTransaction.commit();
             }
         });
+
+
 
 
 
