@@ -855,4 +855,7 @@
     <string name="wework_32_milestone_the_galaxy_hotel_nh8_sector_15_gurugram_hr_122001">WeWork, 32 Milestone, The Galaxy Hotel NH8, Sector 15, Gurugram, HR-122001</string>
     <string name="helpme_shopoholicbuddy_com">helpme@shopoholicbuddy.com</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

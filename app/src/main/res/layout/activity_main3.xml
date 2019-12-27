@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
     android:orientation="vertical"
-    tools:context="Main4Activity">
+    tools:context="Main3Activity">
 
     <include
         android:id="@+id/layout_toolbar"
@@ -45,6 +45,7 @@
                         app:fontName="@string/orkney_bold" />
 
                     <com.ctdworld.myapplication.customviews.CustomEditText
+                        android:id="@+id/et_registered_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_20sdp"
@@ -73,6 +74,7 @@
                         android:background="@color/colorSeparator" />
 
                     <com.ctdworld.myapplication.customviews.CustomEditText
+                        android:id="@+id/et_incorporation_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_20sdp"
@@ -149,11 +151,11 @@
                             android:fontFamily="@string/orkney_light"
                             android:padding="4dp"
                             android:text="Public Company"
-                            android:textColor="@color/colorAccent" />
+                            android:textColor="@color/colorHintText" />
 
                     </RadioGroup>
 
-                    <RelativeLayout
+                  <!--  <RelativeLayout
                         android:id="@+id/Relative1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -233,7 +235,7 @@
                             android:layout_below="@+id/txt_particular"
                             android:layout_marginLeft="100dp"
                             android:layout_marginTop="5dp"
-                            android:layout_toRightOf="@+id/txt_SlNo"
+                            android:layout_toRightOf="@+id/txt_1"
                             android:text="Copy Of Pan"
                             android:textColor="@android:color/white"
                             android:textSize="17sp"
@@ -246,7 +248,7 @@
                             android:layout_below="@+id/txt_copy_of_pan"
                             android:layout_marginLeft="100dp"
                             android:layout_marginTop="5dp"
-                            android:layout_toRightOf="@+id/txt_SlNo"
+                            android:layout_toRightOf="@+id/txt_2"
                             android:text="Copy of Cancelled Cheque"
                             android:textColor="@android:color/white"
                             android:textSize="17sp"
@@ -259,7 +261,7 @@
                             android:layout_below="@+id/txt_copy_of_cancelledCheck"
                             android:layout_marginLeft="100dp"
                             android:layout_marginTop="5dp"
-                            android:layout_toRightOf="@+id/txt_SlNo"
+                            android:layout_toRightOf="@+id/txt_3"
                             android:text="Copy of GST Certificate"
                             android:textColor="@android:color/white"
                             android:textSize="17sp"
@@ -272,7 +274,7 @@
                             android:layout_below="@+id/txt_copy_of_gstCertificate"
                             android:layout_marginLeft="100dp"
                             android:layout_marginTop="5dp"
-                            android:layout_toRightOf="@+id/txt_SlNo"
+                            android:layout_toRightOf="@+id/txt_4"
                             android:text="Copy of Adhaar"
                             android:textColor="@android:color/white"
                             android:textSize="17sp"
@@ -280,7 +282,7 @@
 
 
 
-                    </RelativeLayout>
+                    </RelativeLayout>-->
 
 
                 </LinearLayout>
@@ -299,8 +301,11 @@
                 android:id="@+id/btn_next"
                 android:layout_width="@dimen/_73sdp"
                 android:layout_height="@dimen/_73sdp"
-                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
+                android:layout_marginEnd="169dp"
+                android:layout_marginBottom="0dp"
                 android:background="@drawable/zero_px_transparent"
                 android:drawableRight="@drawable/ic_forward"
                 android:drawableTint="@android:color/white"

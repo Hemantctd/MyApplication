@@ -52,51 +52,55 @@
 
 
                     <RelativeLayout
+                        android:id="@+id/rel_pan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="@dimen/_20sdp">
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
 
 
                         <com.ctdworld.myapplication.customviews.CustomTextView
+                            android:id="@+id/txt_pan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_toLeftOf="@+id/float1"
                             android:text="PAN"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold"
-                            android:layout_toLeftOf="@+id/float1"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            />
-
+                            app:fontName="@string/orkney_bold" />
 
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/float1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="@android:color/white"
                             android:layout_alignParentEnd="true"
-                            android:src="@drawable/pan"/>
+                            android:backgroundTint="@android:color/white"
+                            android:src="@drawable/pan" />
 
 
                     </RelativeLayout>
+
                     <RelativeLayout
+                        android:id="@+id/rel_cancelledCheque"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_10sdp">
+
                         <com.ctdworld.myapplication.customviews.CustomTextView
+                            android:id="@+id/txt_cancelled_cheque"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="11dp"
+                            android:layout_toLeftOf="@+id/float2"
                             android:text="Cancelled Cheque"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold"
-                            android:layout_toLeftOf="@+id/float2"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            />
+                            app:fontName="@string/orkney_bold" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/float2"
@@ -109,6 +113,7 @@
 
                     </RelativeLayout>
                     <RelativeLayout
+                        android:id="@+id/rel_gstCertificate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -116,6 +121,7 @@
 
 
                         <com.ctdworld.myapplication.customviews.CustomTextView
+                            android:id="@+id/txt_gst_certificate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="GST Certificate"
@@ -139,12 +145,14 @@
 
 
                     <RelativeLayout
+                        android:id="@+id/rel_Adhaar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginTop="@dimen/_10sdp">
 
                         <com.ctdworld.myapplication.customviews.CustomTextView
+                            android:id="@+id/txt_adhaar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Adhaar"
@@ -179,6 +187,7 @@
 
 
             <com.ctdworld.myapplication.customviews.CustomButton
+                android:id="@+id/btn_submit"
                 android:layout_width="@dimen/_73sdp"
                 android:layout_height="@dimen/_73sdp"
                 android:layout_gravity="center"

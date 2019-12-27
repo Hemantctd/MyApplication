@@ -18,12 +18,13 @@ public class Main3Activity extends AppCompatActivity {
     RelativeLayout btnAction;
     CustomButton btn_next;
     CustomTextView txt_copy_of_adhaar,txt_copy_of_gstCertificate,txt_copy_of_cancelledCheck,txt_copy_of_pan,txt_particular,txt_4,txt_3,txt_2,txt_1,txt_SlNo;
+    CustomEditText et_incorporation_date,et_registered_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        txt_copy_of_adhaar=(CustomTextView)findViewById(R.id.txt_copy_of_adhaar);
+      /*  txt_copy_of_adhaar=(CustomTextView)findViewById(R.id.txt_copy_of_adhaar);
         txt_copy_of_gstCertificate=(CustomTextView)findViewById(R.id.txt_copy_of_gstCertificate);
         txt_copy_of_cancelledCheck=(CustomTextView)findViewById(R.id.txt_copy_of_cancelledCheck);
         txt_copy_of_pan=(CustomTextView)findViewById(R.id.txt_copy_of_pan);
@@ -33,7 +34,9 @@ public class Main3Activity extends AppCompatActivity {
         txt_3=(CustomTextView)findViewById(R.id.txt_3);
         txt_2=(CustomTextView)findViewById(R.id.txt_2);
         txt_1=(CustomTextView)findViewById(R.id.txt_1);
-        txt_SlNo=(CustomTextView)findViewById(R.id.txt_SlNo);
+        txt_SlNo=(CustomTextView)findViewById(R.id.txt_SlNo);*/
+        et_registered_name=(CustomEditText)findViewById(R.id.et_registered_name);
+        et_incorporation_date=(CustomEditText)findViewById(R.id.et_incorporation_date);
 
         ivBack =  findViewById(R.id.iv_back);
 //        AppUtils.getInstance().hideKeyboard(this);
