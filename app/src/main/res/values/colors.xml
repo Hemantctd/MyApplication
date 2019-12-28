@@ -78,6 +78,7 @@
         <color name="colorTextChange">#A51EA9</color>
         <color name="colorDate">#CDAEFF</color>
         <color name="colorBgDarkGray">#AFB4B2</color>
+        <color name="colorAdd_Minus">#702f8a</color>
 
 
     </resources>

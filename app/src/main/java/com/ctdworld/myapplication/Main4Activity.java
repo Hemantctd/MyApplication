@@ -1,9 +1,9 @@
 package com.ctdworld.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -53,19 +53,26 @@ public class Main4Activity extends AppCompatActivity {
         rel_pan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, PanFragment.class));
-            }
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new PanFragment());
+                f.addToBackStack(null);
+                f.commit();            }
         });
         float1_pan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, PanFragment.class));
-            }
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new PanFragment());
+                f.addToBackStack(null);
+                f.commit();            }
         });
         txt_pan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, PanFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new PanFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
 
@@ -73,19 +80,28 @@ public class Main4Activity extends AppCompatActivity {
         rel_cancelledCheque.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, CancelledChequeFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new CancelledChequeFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         float2_cancelled_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, CancelledChequeFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new CancelledChequeFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         txt_cancelled_cheque.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, CancelledChequeFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new CancelledChequeFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
 
@@ -93,19 +109,28 @@ public class Main4Activity extends AppCompatActivity {
         rel_gstCertificate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, GstCertificateFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new GstCertificateFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         float3_gstCertificate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, GstCertificateFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new GstCertificateFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         txt_gst_certificate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, GstCertificateFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new GstCertificateFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
 
@@ -114,26 +139,31 @@ public class Main4Activity extends AppCompatActivity {
         rel_Adhaar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, AdhaarFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new AdhaarFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         float4_adhaar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main4Activity.this, AdhaarFragment.class));
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new AdhaarFragment());
+                f.addToBackStack(null);
+                f.commit();
             }
         });
         txt_adhaar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                // startActivity(new Intent(Main4Activity.this, AdhaarFragment.class));
 
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                AdhaarFragment adhaarFragment = new AdhaarFragment();
-                fragmentTransaction.add(R.layout.fragment_adhaar);
-                fragmentTransaction.commit();
+                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new AdhaarFragment());
+                f.addToBackStack(null);
+                f.commit();
+
             }
         });
 
@@ -151,8 +181,9 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 onBackPressed();
-
             }
+
+
         });
         btn_submit =(CustomButton)findViewById(R.id.btn_submit);
                 btn_submit.setOnClickListener(new View.OnClickListener() {

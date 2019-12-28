@@ -148,6 +148,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:checked="true"
+                            android:buttonTint="@color/colorHintText"
                             android:fontFamily="@string/orkney_light"
                             android:padding="4dp"
                             android:text="Public Company"
