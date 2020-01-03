@@ -37,7 +37,8 @@
             android:ellipsize="end"
             android:textColor="@android:color/white"
             android:textSize="@dimen/_13sdp"
-            app:fontName="@string/orkney_medium"
+            app:fontName="@string/orkney_bold"
+            android:fontFamily="@string/orkney_bold"
             />
 
         <RelativeLayout

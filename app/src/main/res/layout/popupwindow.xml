@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+
+    <com.ctdworld.myapplication.customviews.CustomTextView
+        android:id="@+id/txt_popupheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Declaration"
+        android:textColor="@color/colorLightWhite"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@string/orkney_bold"
+        app:fontName="@string/orkney_bold"
+        android:textSize="25sp"/>
+
+    <com.ctdworld.myapplication.customviews.CustomButton
+        android:id="@+id/btn_Ideclare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@string/orkney_bold"
+        android:text="I Declare"
+        android:textColor="@color/colorLightWhite"
+        app:fontName="@string/orkney_bold"
+        android:background="@color/colorAdd_Minus"/>
+
+
+</RelativeLayout>

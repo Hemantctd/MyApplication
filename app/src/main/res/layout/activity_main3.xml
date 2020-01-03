@@ -42,7 +42,8 @@
                         android:text="Fill Details To Complete Your KYC"
                         android:textColor="@android:color/white"
                         android:textSize="17sp"
-                        app:fontName="@string/orkney_bold" />
+                        app:fontName="@string/orkney_bold"
+                        android:fontFamily="@string/orkney_bold"/>
 
                     <com.ctdworld.myapplication.customviews.CustomEditText
                         android:id="@+id/et_registered_name"
@@ -103,7 +104,9 @@
                         android:text="Registered Under"
                         android:textColor="@android:color/white"
                         android:textSize="17sp"
-                        app:fontName="@string/orkney_bold" />
+                        app:fontName="@string/orkney_bold"
+                        android:fontFamily="@string/orkney_bold"
+                        />
 
 
                     <RadioGroup
@@ -305,8 +308,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
-                android:layout_marginEnd="169dp"
-                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/zero_px_transparent"
                 android:drawableRight="@drawable/ic_forward"
                 android:drawableTint="@android:color/white"
@@ -315,6 +318,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_13sdp"
                 android:visibility="visible"
+                android:fontFamily="@string/orkney_bold"
                 app:fontName="@string/orkney_bold" />
         </RelativeLayout>
 

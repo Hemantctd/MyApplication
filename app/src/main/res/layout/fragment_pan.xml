@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:layout_marginTop="40dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.PanFragment"
     android:background="@drawable/bg_login">
 
 

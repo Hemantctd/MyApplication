@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="40dp"
+            android:fontFamily=""
             android:text="Particulars"
             android:textColor="@android:color/white"
             android:textSize="17sp"
@@ -54,11 +55,11 @@
 
 
         <com.ctdworld.myapplication.customviews.CustomTextView
-            android:id="@+id/txt_Copy_of_cancelled_cheque"
+            android:id="@+id/txt_blank_document_tiltle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Copy of Cancelled Cheque"
+            android:text="Document Title"
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="17sp"
@@ -119,18 +120,18 @@
                 android:text="Upload"
                 android:layout_marginRight="5dp"
                 android:layout_centerInParent="true"
-                android:layout_toLeftOf="@+id/float2"
+                android:layout_toLeftOf="@+id/float4"
                 android:textColor="@android:color/white"
                 android:textSize="17sp"
                 app:fontName="@string/orkney_bold"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/float2"
+                android:id="@+id/float4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/white"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/cancel_cheque"/>
+                android:src="@drawable/pan"/>
 
 
         </RelativeLayout>

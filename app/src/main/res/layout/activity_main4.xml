@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_login"
     android:orientation="vertical"
-    tools:context=".Main4Activity">
+    tools:context="Main4Activity">
 
     <include
         android:id="@+id/layout_toolbar"
@@ -47,7 +47,8 @@
                         android:text="Upload the below required documents"
                         android:textColor="@android:color/white"
                         android:textSize="17sp"
-                        app:fontName="@string/orkney_bold" />
+                        app:fontName="@string/orkney_bold"
+                        android:fontFamily="@string/orkney_bold"/>
 
 
                     <RelativeLayout
@@ -68,7 +69,8 @@
                             android:layout_toLeftOf="@+id/float1"
                             android:text="PAN"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold" />
+                            app:fontName="@string/orkney_bold"
+                            android:fontFamily="@string/orkney_bold"/>
 
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -99,7 +101,8 @@
                             android:layout_toLeftOf="@+id/float2"
                             android:text="Cancelled Cheque"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold" />
+                            app:fontName="@string/orkney_bold"
+                            android:fontFamily="@string/orkney_bold"/>
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/float2"
@@ -129,7 +132,8 @@
                             android:layout_toLeftOf="@+id/float3"
                             android:text="GST Certificate"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold" />
+                            app:fontName="@string/orkney_bold"
+                            android:fontFamily="@string/orkney_bold"/>
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/float3"
@@ -159,7 +163,8 @@
                             android:layout_toLeftOf="@+id/float4"
                             android:text="Adhaar"
                             android:textColor="@android:color/white"
-                            app:fontName="@string/orkney_bold" />
+                            app:fontName="@string/orkney_bold"
+                            android:fontFamily="@string/orkney_bold"/>
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/float4"
@@ -177,7 +182,7 @@
                         android:layout_height="wrap_content">
 
 
-                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                  <!--      <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/floatbtn_add"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -192,7 +197,7 @@
                             android:layout_toRightOf="@+id/floatbtn_add"
                             android:background="@color/colorAdd_Minus"
                             android:backgroundTint="@color/colorAdd_Minus"
-                            android:src="@drawable/ic_minus" />
+                            android:src="@drawable/ic_minus" /> -->
 
                         //Add popup screen and checkbox
 
@@ -205,8 +210,8 @@
                         android:layout_marginTop="40dp"
                         android:layout_marginLeft="5dp"
                         android:backgroundTint="@color/colorAdd_Minus"
-                        android:background="@color/colorAdd_Minus"
-                        android:layout_below="@+id/floatbtn_add"/>
+                        android:background="@color/colorAdd_Minus"/>
+                       <!-- android:layout_below="@+id/floatbtn_add"/> -->
 
                         <com.ctdworld.myapplication.customviews.CustomTextView
                             android:id="@+id/txt_declaration"
@@ -219,6 +224,20 @@
                             android:text="I hearby declare that I don't have GST Registration and I accept the agreement."
                             android:textColor="@android:color/white"
                             android:textSize="17sp"
+                            app:fontName="@string/orkney_bold"
+                            android:fontFamily="@string/orkney_bold"/>
+
+
+                        <com.ctdworld.myapplication.customviews.CustomTextView
+                            android:id="@+id/txt_view_declaration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_checkbox"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="26dp"
+                            android:layout_marginTop="19dp"
+                            android:text="To view the declaration"
+                            android:textColor="@android:color/white"
                             app:fontName="@string/orkney_bold" />
 
                         <com.ctdworld.myapplication.customviews.CustomButton
@@ -228,22 +247,11 @@
                             android:layout_below="@+id/txt_declaration"
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="0dp"
-                            android:layout_marginEnd="69dp"
+                            android:layout_marginEnd="72dp"
                             android:background="@color/colorAdd_Minus"
+                            android:fontFamily="@string/orkney_bold"
                             android:text="Click Here"
                             android:textColor="@color/colorLightWhite"
-                            app:fontName="@string/orkney_bold" />
-
-                        <com.ctdworld.myapplication.customviews.CustomTextView
-                            android:id="@+id/txt_view_declaration"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/btn_checkbox"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="59dp"
-                            android:layout_marginTop="15dp"
-                            android:text="To view the declaration"
-                            android:textColor="@android:color/white"
                             app:fontName="@string/orkney_bold" />
 
                     </RelativeLayout>
@@ -274,6 +282,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_13sdp"
                 android:visibility="visible"
+                android:fontFamily="@string/orkney_bold"
                 app:fontName="@string/orkney_bold" />
         </RelativeLayout>
 

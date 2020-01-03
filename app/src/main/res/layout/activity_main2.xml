@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Main2Activity"
+    tools:context="Main2Activity"
     android:background="@drawable/bg_login">
     <include
         android:id="@+id/layout_toolbar"
@@ -52,6 +52,7 @@
                         android:textColor="@android:color/white"
                         android:textSize="17sp"
                         app:fontName="@string/orkney_bold"
+                        android:fontFamily="@string/orkney_bold"
                         />
 
 
@@ -392,6 +393,7 @@
                 android:drawableTint="@android:color/white"
                 android:visibility="visible"
                 android:layout_centerInParent="true"
+                android:fontFamily="@string/orkney_bold"
                 app:fontName="@string/orkney_bold"/>
         </RelativeLayout>
 

@@ -35,13 +35,13 @@ public class Main3Activity extends AppCompatActivity {
         txt_2=(CustomTextView)findViewById(R.id.txt_2);
         txt_1=(CustomTextView)findViewById(R.id.txt_1);
         txt_SlNo=(CustomTextView)findViewById(R.id.txt_SlNo);*/
-        et_registered_name=(CustomEditText)findViewById(R.id.et_registered_name);
-        et_incorporation_date=(CustomEditText)findViewById(R.id.et_incorporation_date);
+        et_registered_name = (CustomEditText) findViewById(R.id.et_registered_name);
+        et_incorporation_date = (CustomEditText) findViewById(R.id.et_incorporation_date);
 
-        ivBack =  findViewById(R.id.iv_back);
+        ivBack = findViewById(R.id.iv_back);
 //        AppUtils.getInstance().hideKeyboard(this);
 
-        btnAction =  findViewById(R.id.btn_action);
+        btnAction = findViewById(R.id.btn_action);
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,17 +57,15 @@ public class Main3Activity extends AppCompatActivity {
 
             }
         });
-        btn_next=(CustomButton)findViewById(R.id.btn_next);
+        btn_next = (CustomButton) findViewById(R.id.btn_next);
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main3Activity.this,Main4Activity.class));
+                startActivity(new Intent(Main3Activity.this, Main4Activity.class));
             }
         });
 
     }
-
-
 
 
     @Override

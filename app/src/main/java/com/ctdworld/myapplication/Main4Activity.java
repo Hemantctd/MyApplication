@@ -1,9 +1,10 @@
 package com.ctdworld.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.RelativeLayout;
 import com.ctdworld.myapplication.customviews.CustomButton;
 import com.ctdworld.myapplication.customviews.CustomTextView;
 import com.ctdworld.myapplication.fragment.AdhaarFragment;
+import com.ctdworld.myapplication.fragment.BlankFragment;
 import com.ctdworld.myapplication.fragment.CancelledChequeFragment;
 import com.ctdworld.myapplication.fragment.GstCertificateFragment;
 import com.ctdworld.myapplication.fragment.PanFragment;
@@ -22,8 +24,8 @@ public class Main4Activity extends AppCompatActivity {
 
     ImageView ivBack;
     RelativeLayout btnAction;
-    CustomButton btn_submit;
-    FloatingActionButton float1_pan,float2_cancelled_check,float3_gstCertificate,float4_adhaar;
+    CustomButton btn_submit,btn_clickHere;
+    FloatingActionButton float1_pan,float2_cancelled_check,float3_gstCertificate,float4_adhaar,floatbtn_add,floatbtn_minus;
     CustomTextView txt_adhaar,txt_gst_certificate,txt_cancelled_cheque,txt_pan;
     RelativeLayout rel_pan,rel_cancelledCheque,rel_gstCertificate,rel_Adhaar;
     private Object Fragment;
@@ -42,7 +44,8 @@ public class Main4Activity extends AppCompatActivity {
         float2_cancelled_check=(FloatingActionButton)findViewById(R.id.float2);
         float3_gstCertificate=(FloatingActionButton)findViewById(R.id.float3);
         float4_adhaar=(FloatingActionButton)findViewById(R.id.float4);
-
+//        floatbtn_add=(FloatingActionButton)findViewById(R.id.floatbtn_add);
+//        floatbtn_minus=(FloatingActionButton)findViewById(R.id.floatbtn_minus);
 
         txt_adhaar=(CustomTextView)findViewById(R.id.txt_adhaar);
         txt_gst_certificate=(CustomTextView)findViewById(R.id.txt_gst_certificate);
@@ -158,7 +161,6 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 FragmentTransaction f = getSupportFragmentManager().beginTransaction();
                 f.replace(R.id.container,new AdhaarFragment());
                 f.addToBackStack(null);
@@ -166,6 +168,32 @@ public class Main4Activity extends AppCompatActivity {
 
             }
         });
+
+      /* floatbtn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction f= getSupportFragmentManager().beginTransaction();
+                f.replace(R.id.container,new BlankFragment());
+                f.addToBackStack(null);
+                f.commit();
+            }
+        });*/
+
+      /*  floatbtn_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                android.app.FragmentManager fragmentManager = getFragmentManager();
+                android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.container,no);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+
+                        FragmentManager fm = getActivity().getSupportFragmentManager();
+                if(fm.getBackStackEntryCount()>0) {
+                    fm.popBackStack();
+            }
+        });*/
 
 
 
@@ -183,7 +211,15 @@ public class Main4Activity extends AppCompatActivity {
                 onBackPressed();
             }
 
+        });
 
+        btn_clickHere=(CustomButton)findViewById(R.id.btn_clickHere);
+
+        btn_clickHere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main4Activity.this,Pop.class));
+            }
         });
         btn_submit =(CustomButton)findViewById(R.id.btn_submit);
                 btn_submit.setOnClickListener(new View.OnClickListener() {
